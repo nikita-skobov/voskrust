@@ -28,3 +28,11 @@ cargo build --example simpletest
 ```
 
 simpletest just uses the `vosk_set_log_level` function. If it builds and runs successfully, then the other functions should work as well.
+
+
+# LICENSE
+
+This project uses vosk which is licensed under apache2, so i decided this project will also be licensed under apache2
+
+See the vosk license here: https://github.com/alphacep/vosk-api/blob/master/COPYING
+
