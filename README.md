@@ -17,3 +17,12 @@ docker rm -v $id
 Now you will have `libvosk.a` in the root directory of this repository.
 
 The `build.rs` build script simply adds the root of this repository to the library search path, and in our `src/lib.rs` file, we add `#[link(name = "vosk")]` which tells rust to look for `libvosk.a`
+
+You can try a minimal example:
+
+```sh
+cargo build --example simpletest
+./target/debug/simpletest
+```
+
+simpletest just uses the `vosk_set_log_level` function. If it builds and runs successfully, then the other functions should work as well.
