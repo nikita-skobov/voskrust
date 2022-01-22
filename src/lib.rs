@@ -1,4 +1,4 @@
-#[link(name = "vosk")]
-extern {
-    pub fn vosk_set_log_level(log_level: ::std::os::raw::c_int);
-}
+pub mod raw;
+pub mod api;
+pub mod sound;
+pub mod extract_json;
