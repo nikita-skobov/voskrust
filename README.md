@@ -22,7 +22,7 @@ You can try a minimal example:
 
 ```sh
 cargo build --example simpletest
-./target/debug/simpletest
+./target/debug/example/simpletest
 ```
 
 simpletest just uses the `vosk_set_log_level` function. If it builds and runs successfully, then the other functions should work as well.
