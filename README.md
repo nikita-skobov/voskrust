@@ -18,6 +18,8 @@ Now you will have `libvosk.a` in the root directory of this repository.
 
 (Alternatively, you can run `./getlibvoskfromdocker.sh` which performs the above in one step)
 
+Also, if you don't want to build `libvosk.a` from source, you can instead get a pre-compiled binary [here](https://github.com/nikita-skobov/voskrust/releases/tag/v1.0.0)
+
 The `build.rs` build script simply adds the root of this repository to the library search path, and in our `src/raw.rs` file, we add `#[link(name = "vosk")]` which tells rust to look for `libvosk.a`
 
 You can try a minimal example:
